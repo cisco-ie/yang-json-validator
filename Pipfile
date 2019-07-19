@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "==19.3b0"
+pylint = "*"
+
+[packages]
+pyang = "==1.7.5"
+pyinquirer = "*"
+ncclient = "*"
+
+[requires]
+python_version = "3.7"

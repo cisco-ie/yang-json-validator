@@ -1,0 +1,40 @@
+{
+  "openconfig-acl:acl": {
+    "acl-sets": {
+      "acl-set": [
+        {
+          "acl-entries": {
+            "acl-entry": [
+              {
+                "actions": {
+                  "config": {
+                    "forwarding-action": "openconfig-acl:ACCEPT"
+                  }
+                },
+                "config": {
+                  "sequence-id": 0
+                },
+                "ipv4": {
+                  "config": {
+                    "protocol": "openconfig-packet-match-types:IP_TCP"
+                  }
+                },
+                "sequence-id": 0,
+                "transport": {
+                  "config": {
+                    "destination-port": 80
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "openconfig-system:system": {
+    "config": {
+      "hostname": "friendly-yang"
+    }
+  }
+}
